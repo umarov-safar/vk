@@ -5,6 +5,7 @@ namespace Safar\VK\Managers;
 use Safar\VK\Models\Order;
 use Safar\VK\Models\PaymentRequest;
 
+// PaymentManger communicate with external payment service api
 class PaymentManger
 {
     private ExternalPaymentServiceInterface $externalPaymentService;

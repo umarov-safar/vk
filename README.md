@@ -1,3 +1,48 @@
 # VK Task
-#### Схема данных
-URL: https://drawsql.app/teams/safar-team/diagrams/internet-magazin
+
+## Описанием прототипа
+
+Все классы находятся в папке `src` и используют пространство имен (`namespace`) `Safar\VK`. 
+В этом пространстве имен определены следующие классы:
+
+#### Application
+Класс `Application` основной класс, который запускает программу.
+
+### src/Controllers
+**OrdersController**
+
+Управляет процессом создания заказов.
+
+### src/Managers
+**DeliveryManager**
+
+Манеджер, отвечающий за отправку запросов на внешний сервис для доставки заказов. Он обеспечивает интеграцию с внешними системами доставки, обрабатывая все необходимые шаги для успешной доставки. 
+
+**PaymentManager**
+
+Менеджер, отвечающий за обработку платежей. Он обрабатывает запросы на оплату, взаимодействуя с платежными шлюзами и обеспечивая безопасность транзакций.
+
+**ExternalDeliveryServiceInterface**
+
+Определяет стандартные методы для взаимодействия с внешним сервисом доставки.
+
+**ExternalPaymentServiceInterface** 
+
+Определяет стандартные методы для взаимодействия с внешним сервисом оплата.
+
+### src/Models
+**Order**
+Модель, отвечающая за операции CRUD
+
+### src/Routing
+
+**Router**
+
+Класс Router отвечает за управление маршрутами приложения.
+Он содержит все маршруты с их контроллерами. Для каждого маршрута
+в Router определен метод dispatch(), который вызывает соответствующий контроллер
+с нужным методом в зависимости от маршрута.
+
+## Ссылки на схемы
+БД: https://drawsql.app/teams/safar-team/diagrams/internet-magazin
+Компоненты системы и их взаимодействие: https://miro.com/welcomeonboard/Q3dkbWZtdHhCMmRuR3duQXlsZ2phYmJPcXFQaFdPQUMwdWJxV21RbDlHWmxDc0lVZE1KSXhOeklRYXR6Vk5MeHwzNDU4NzY0NTI1OTYzMjk4MDA1fDI=?share_link_id=462577206241

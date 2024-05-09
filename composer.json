@@ -1,0 +1,15 @@
+{
+    "name": "safar/vk",
+    "authors": [
+        {
+            "name": "Safar Umarov",
+            "email": "safarumarov711@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Safar\\VK\\": "src/"
+        }
+    },
+    "require": {}
+}

@@ -44,4 +44,5 @@
 
 ## Ссылки на схемы
 БД: https://drawsql.app/teams/safar-team/diagrams/internet-magazin
+
 Компоненты системы и их взаимодействие: https://miro.com/welcomeonboard/Q3dkbWZtdHhCMmRuR3duQXlsZ2phYmJPcXFQaFdPQUMwdWJxV21RbDlHWmxDc0lVZE1KSXhOeklRYXR6Vk5MeHwzNDU4NzY0NTI1OTYzMjk4MDA1fDI=?share_link_id=462577206241

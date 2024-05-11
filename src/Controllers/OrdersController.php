@@ -2,7 +2,6 @@
 
 namespace Safar\VK;
 
-
 use Safar\VK\Managers\DeliveryManger;
 use Safar\VK\Managers\PaymentManger;
 use Safar\VK\Models\Order;
@@ -19,7 +18,7 @@ class OrdersController
         $paymentRequest = $this->paymentManger->requestPayment($order);
 
         if ($paymentRequest->isSuccessful()) {
-           $deliveryRequest = $this->deliveryManager->requestDelivery($order, $paymentRequest);
+           $this->deliveryManager->requestDelivery($order, $paymentRequest);
         }
 
         return $order;
